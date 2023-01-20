@@ -58,7 +58,20 @@ Alternatively, follow the instructions below:
 4. Launch Cytoscape. A panel with the title ![Icon](src/main/resources/icons/add_pole_N_icon_16.png) **Software Layout**
 should appear to the left of the editor.
 
+### Building the App
 
+Required: install Maven 3.8.x, Java SDK 11.0.x, IntelliJ IDEA
+
+1. Clone the project
+
+2. Open pom.xml, press "build file" to resolve dependencies
+
+3. Use `mvn install` command to compile into a jar
+
+4. Move the resulting `target/*.jar`
+   to `%userprofile%/CytoscapeConfiguration/3/apps/installed/`
+
+5. You can set up a shell script that performs 3 & 4 in succession, for example: `mvn install && cp [PATH]/*.jar [PATH]`
 
 
 ---
